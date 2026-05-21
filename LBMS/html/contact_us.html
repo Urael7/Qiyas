@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Library Book Management System</title>
+    <link rel="stylesheet" href="../css/contact_us.css" />
+    <script src="../main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="book_list.html">Book List</a></li>
+          <li><a href="features_page.html">Features</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="contact_us.html" class="active">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <h1>Contact Us</h1>
+        <p>Get in touch with our library team for any questions or support.</p>
+      </section>
+      <section class="contact-content">
+        <div class="contact-info">
+          <h2>Library Information</h2>
+          <p>
+            <strong>Address:</strong> 4 kilo, Addis Ababa, Ethiopia
+          </p>
+          <p><strong>Phone:</strong> 011704882 / 011704838 / +251985550756</p>
+          <p><strong>Email:</strong> admin@abrehot.org.et</p>
+          <p><strong>Hours:</strong> Monday - Saturday : 8:00 AM - 5:00 PM</p>
+        </div>
+        <div class="contact-form">
+          <h2>Send us a Message</h2>
+          <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter Your Name"/>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter Your email"/>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Enter Subject"></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2026 Library Book Management System</p>
+    </footer>
+  </body>
+</html>

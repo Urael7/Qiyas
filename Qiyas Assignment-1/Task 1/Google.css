@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #cad2cc;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 10px 20px;
+}
+
+.top-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.top-right a {
+  text-decoration: none;
+  color: #444;
+  font-size: 14px;
+}
+
+.top-right img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.top-right a:hover {
+  color: grey;
+}
+
+.bookmark-bar {
+  gap: 15px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 5px;
+  border-bottom: 0.5px solid #9e9292; 
+  font-size: 14px;
+  color: #444;
+}
+
+.bookmark-bar a {
+  text-decoration: none;
+  color: #444;
+  font-size: 14px;
+}
+.bookmark-bar a:hover {
+  color: grey;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.logo {
+  font-size: 70px;
+  margin-bottom: 30px;
+  color: green;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  width: 500px;
+  background-color: white;
+
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  flex: 1;
+  margin: 0 10px;
+}
+
+.icons {
+  display: flex;
+  gap: 13px;
+  text-decoration: none;
+  color: #444;
+  font-size: 14px;
+}
+
+.icons a {
+  text-decoration: none;
+  color: #444;
+  font-size: 14px;
+  text-align: center;
+}
+
+.icons a:hover {
+  color: grey;
+}
+
+.shortcuts {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.shortcut {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.shortcut-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  font-weight: bold;
+
+  overflow: hidden;
+}
+
+.shortcut-icon img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+}
+
+.shortcut:hover .shortcut-icon {
+  background-color: #ccc;
+}
+
+.shortcut p {
+  margin: 0;
+  font-size: 12px;
+  color: #444;
+}

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book List - Library Book Management System</title>
+    <link rel="stylesheet" href="../css/book_list.css" />
+    <script src="../main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="book_list.html" class="active">Book List</a></li>
+          <li><a href="features_page.html">Features</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="contact_us.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <h1>Library Book Management</h1>
+        <p>Manage books efficiently with add, update, and delete features.</p>
+      </section>
+      <section class="notifications">
+        <div id="message-box" class="message hidden"></div>
+      </section>
+      <section class="add-book">
+        <h2>Add New Book</h2>
+        <form id="add-book-form">
+          <div class="form-row">
+            <label for="title">Title</label>
+            <input id="title" type="text" placeholder="Book title" required />
+          </div>
+          <div class="form-row">
+            <label for="author">Author</label>
+            <input id="author" type="text" placeholder="Author name" required />
+          </div>
+          <div class="form-row">
+            <label for="category">Category</label>
+            <input
+              id="category"
+              type="text"
+              placeholder="Category or genre"
+              required
+            />
+          </div>
+          <div class="form-row">
+            <label for="quantity">Quantity</label>
+            <input id="quantity" type="number" min="1" value="1" required />
+          </div>
+          <button type="submit">Add Book</button>
+        </form>
+      </section>
+      <section class="edit-book hidden" id="edit-book-section">
+        <h2>Edit Book Details</h2>
+        <form id="edit-book-form">
+          <div class="form-row">
+            <label for="edit-title">Title</label>
+            <input id="edit-title" type="text" required />
+          </div>
+          <div class="form-row">
+            <label for="edit-author">Author</label>
+            <input id="edit-author" type="text" required />
+          </div>
+          <div class="form-row">
+            <label for="edit-category">Category</label>
+            <input id="edit-category" type="text" required />
+          </div>
+          <div class="form-row">
+            <label for="edit-quantity">Quantity</label>
+            <input id="edit-quantity" type="number" min="1" required />
+          </div>
+          <div class="form-actions">
+            <button type="submit">Save Changes</button>
+            <button id="cancel-edit" type="button">Cancel</button>
+          </div>
+        </form>
+      </section>
+      <section class="book-list-header">
+        <h2>All Books</h2>
+        <p id="book-count">Showing 0 books</p>
+      </section>
+      <section class="book-grid" id="book-grid"></section>
+    </main>
+    <footer>
+      <p>&copy; 2026 Library Book Management System</p>
+    </footer>
+  </body>
+</html>
